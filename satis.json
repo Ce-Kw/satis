@@ -1,0 +1,11 @@
+{
+    "name": "Ce-Kw Composer Repository",
+    "homepage": "https://cekw.github.io/satis/",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:wellmann/kwio-gutenberg-blocks.git"
+        }
+    ],
+    "require-all": true
+}
