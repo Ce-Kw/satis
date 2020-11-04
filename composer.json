@@ -1,8 +1,0 @@
-{
-    "name": "cekw/satis",
-    "description": "Ce-Kw Composer Repository",
-    "homepage": "https://cekw.github.io/satis/",
-    "require": {
-        "composer/satis": "^1.0"
-    }
-}

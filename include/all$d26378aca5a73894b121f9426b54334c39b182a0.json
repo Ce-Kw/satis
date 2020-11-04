@@ -1,0 +1,176 @@
+{
+    "packages": {
+        "kwio/gutenberg-blocks": {
+            "v4.0.0": {
+                "name": "kwio/gutenberg-blocks",
+                "version": "v4.0.0",
+                "version_normalized": "4.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/wellmann/kwio-gutenberg-blocks.git",
+                    "reference": "107fcdd7a78468d31f910560277b56b593349bb1"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/wellmann/kwio-gutenberg-blocks/zipball/107fcdd7a78468d31f910560277b56b593349bb1",
+                    "reference": "107fcdd7a78468d31f910560277b56b593349bb1",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": ">=7.1"
+                },
+                "require-dev": {
+                    "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+                    "object-calisthenics/phpcs-calisthenics-rules": "^3.7",
+                    "slevomat/coding-standard": "^6.1",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "wp-coding-standards/wpcs": "^2.2"
+                },
+                "time": "2020-05-09T15:52:55+00:00",
+                "type": "wordpress-plugin",
+                "autoload": {
+                    "psr-4": {
+                        "KWIO\\Gutenberg_Blocks\\": "lib/"
+                    }
+                },
+                "authors": [
+                    {
+                        "name": "Kevin Wellmann",
+                        "email": "kevin@wellmann.io"
+                    }
+                ],
+                "description": "Foundation to develop custom blocks for Gutenberg.",
+                "support": {
+                    "source": "https://github.com/wellmann/kwio-gutenberg-blocks/tree/v4.0.0",
+                    "issues": "https://github.com/wellmann/kwio-gutenberg-blocks/issues"
+                }
+            },
+            "dev-master": {
+                "name": "kwio/gutenberg-blocks",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/wellmann/kwio-gutenberg-blocks.git",
+                    "reference": "b85d68b55edc14e75be1a3629f24740e73b846b1"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/wellmann/kwio-gutenberg-blocks/zipball/b85d68b55edc14e75be1a3629f24740e73b846b1",
+                    "reference": "b85d68b55edc14e75be1a3629f24740e73b846b1",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": ">=7.4"
+                },
+                "require-dev": {
+                    "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "wp-coding-standards/wpcs": "^2.2"
+                },
+                "time": "2020-10-18T20:02:49+00:00",
+                "type": "wordpress-plugin",
+                "autoload": {
+                    "psr-4": {
+                        "KWIO\\GutenbergBlocks\\": "lib/"
+                    }
+                },
+                "authors": [
+                    {
+                        "name": "Kevin Wellmann",
+                        "email": "kevin@wellmann.io"
+                    }
+                ],
+                "description": "Foundation to develop custom blocks for Gutenberg.",
+                "support": {
+                    "source": "https://github.com/wellmann/kwio-gutenberg-blocks/tree/master",
+                    "issues": "https://github.com/wellmann/kwio-gutenberg-blocks/issues"
+                }
+            },
+            "dev-dependabot/npm_and_yarn/elliptic-6.5.3": {
+                "name": "kwio/gutenberg-blocks",
+                "version": "dev-dependabot/npm_and_yarn/elliptic-6.5.3",
+                "version_normalized": "dev-dependabot/npm_and_yarn/elliptic-6.5.3",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/wellmann/kwio-gutenberg-blocks.git",
+                    "reference": "43f74290f1dc4ffa51e350f25a4b11cdb5b307a5"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/wellmann/kwio-gutenberg-blocks/zipball/43f74290f1dc4ffa51e350f25a4b11cdb5b307a5",
+                    "reference": "43f74290f1dc4ffa51e350f25a4b11cdb5b307a5",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": ">=7.4"
+                },
+                "require-dev": {
+                    "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "wp-coding-standards/wpcs": "^2.2"
+                },
+                "time": "2020-10-14T19:36:48+00:00",
+                "type": "wordpress-plugin",
+                "autoload": {
+                    "psr-4": {
+                        "KWIO\\GutenbergBlocks\\": "lib/"
+                    }
+                },
+                "authors": [
+                    {
+                        "name": "Kevin Wellmann",
+                        "email": "kevin@wellmann.io"
+                    }
+                ],
+                "description": "Foundation to develop custom blocks for Gutenberg.",
+                "support": {
+                    "source": "https://github.com/wellmann/kwio-gutenberg-blocks/tree/dependabot/npm_and_yarn/elliptic-6.5.3",
+                    "issues": "https://github.com/wellmann/kwio-gutenberg-blocks/issues"
+                }
+            },
+            "dev-dependabot/npm_and_yarn/lodash-4.17.20": {
+                "name": "kwio/gutenberg-blocks",
+                "version": "dev-dependabot/npm_and_yarn/lodash-4.17.20",
+                "version_normalized": "dev-dependabot/npm_and_yarn/lodash-4.17.20",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/wellmann/kwio-gutenberg-blocks.git",
+                    "reference": "ca5c592dff018f82e1163bf60726cbeb341717f9"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/wellmann/kwio-gutenberg-blocks/zipball/ca5c592dff018f82e1163bf60726cbeb341717f9",
+                    "reference": "ca5c592dff018f82e1163bf60726cbeb341717f9",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": ">=7.4"
+                },
+                "require-dev": {
+                    "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "wp-coding-standards/wpcs": "^2.2"
+                },
+                "time": "2020-10-14T19:36:05+00:00",
+                "type": "wordpress-plugin",
+                "autoload": {
+                    "psr-4": {
+                        "KWIO\\GutenbergBlocks\\": "lib/"
+                    }
+                },
+                "authors": [
+                    {
+                        "name": "Kevin Wellmann",
+                        "email": "kevin@wellmann.io"
+                    }
+                ],
+                "description": "Foundation to develop custom blocks for Gutenberg.",
+                "support": {
+                    "source": "https://github.com/wellmann/kwio-gutenberg-blocks/tree/dependabot/npm_and_yarn/lodash-4.17.20",
+                    "issues": "https://github.com/wellmann/kwio-gutenberg-blocks/issues"
+                }
+            }
+        }
+    }
+}
