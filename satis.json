@@ -1,6 +1,7 @@
 {
     "name": "Ce-Kw Composer Repository",
     "homepage": "https://cekw.github.io/satis/",
+    "include-filename": "all.json",
     "repositories": [
         {
             "type": "vcs",
