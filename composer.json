@@ -3,6 +3,6 @@
     "description": "Ce-Kw Composer Repository",
     "homepage": "https://cekw.github.io/satis/",
     "require": {
-        "composer/satis": "^1.0"
+        "composer/satis": "dev-master#6f73606c282e78de9b8c9f9bf101d7d3663a4d3b"
     }
 }
