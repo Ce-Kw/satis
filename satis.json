@@ -5,7 +5,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:wellmann/kwio-gutenberg-blocks.git"
+            "url": "git@github.com:Ce-Kw/wp-plugin-framework-core.git"
         }
     ],
     "require-all": true
