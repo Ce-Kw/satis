@@ -1,11 +1,9 @@
-foo="`cat satis.json`"
-git checkout -B -f gh-pages
-git rm -f composer.json composer.lock README.md satis.json update.sh
-echo $foo > satis.tmp.json
-php $(pwd)/vendor/bin/satis build satis.tmp.json .
-git rm satis.tmp.json -f
+git checkout -B gh-pages
+php $(pwd)/vendor/bin/satis build satis.json .
 git add all.json index.html packages.json
+cd p2 && git add . && cd ..
+git status
 git commit -m "update dependencies"
 git push origin gh-pages
-git rm -f all.json index.html packages.json
-git checkout main -f
+git rm -rf all.json index.html packages.json p2
+git checkout main
