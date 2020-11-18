@@ -6,6 +6,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:Ce-Kw/wp-plugin-framework-core.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:wellmann/gutenberg-blocks-framework.git"
         }
     ],
     "require-all": true

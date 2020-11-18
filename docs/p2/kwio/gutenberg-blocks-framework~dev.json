@@ -1,0 +1,48 @@
+{
+    "packages": {
+        "kwio/gutenberg-blocks-framework": [
+            {
+                "name": "kwio/gutenberg-blocks-framework",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/wellmann/gutenberg-blocks-framework.git",
+                    "reference": "f381c1cd86567485bcda11f2bb0da1dda18b9264"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/f381c1cd86567485bcda11f2bb0da1dda18b9264",
+                    "reference": "f381c1cd86567485bcda11f2bb0da1dda18b9264",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": ">=7.4"
+                },
+                "require-dev": {
+                    "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "wp-coding-standards/wpcs": "^2.2"
+                },
+                "time": "2020-11-18T18:24:01+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "KWIO\\GutenbergBlocksFramework\\": "src/"
+                    }
+                },
+                "authors": [
+                    {
+                        "name": "Kevin Wellmann",
+                        "email": "kevin@wellmann.io"
+                    }
+                ],
+                "description": "Foundation to develop custom blocks for Gutenberg.",
+                "support": {
+                    "source": "https://github.com/wellmann/gutenberg-blocks-framework/tree/master",
+                    "issues": "https://github.com/wellmann/gutenberg-blocks-framework/issues"
+                }
+            }
+        ]
+    }
+}

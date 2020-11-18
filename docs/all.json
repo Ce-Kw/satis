@@ -1,0 +1,121 @@
+{
+    "packages": {
+        "cekw/wp-plugin-framework-core": {
+            "dev-main": {
+                "name": "cekw/wp-plugin-framework-core",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/Ce-Kw/wp-plugin-framework-core.git",
+                    "reference": "51817339fc7dd778a336cb1c1148bf9974600728"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-core/zipball/51817339fc7dd778a336cb1c1148bf9974600728",
+                    "reference": "51817339fc7dd778a336cb1c1148bf9974600728",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": ">=7.4"
+                },
+                "require-dev": {
+                    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                    "mockery/mockery": "^1.4",
+                    "phpunit/phpunit": "^9",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "wp-coding-standards/wpcs": "^2.3"
+                },
+                "time": "2020-11-16T15:48:16+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "CEKW\\WpPluginFramework\\Core\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "build:cc": [
+                        "vendor/bin/phpunit -c phpunit.xml --coverage-html coverage/"
+                    ],
+                    "build:cs-diff": [
+                        "vendor/bin/phpcs --report-diff=cs.diff src"
+                    ],
+                    "check:cs": [
+                        "vendor/bin/phpcs src -p --colors"
+                    ],
+                    "fix:cs": [
+                        "vendor/bin/phpcbf src -p --colors"
+                    ],
+                    "patch:cs-diff": [
+                        "patch -p0 -ui cs.diff"
+                    ],
+                    "start-server:cc": [
+                        "php -S 127.0.0.1:8000 -t coverage/"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit -c phpunit.xml --colors"
+                    ]
+                },
+                "authors": [
+                    {
+                        "name": "Christoph Ehlers",
+                        "email": "Christoph.Ehlers1988@gmx.de"
+                    },
+                    {
+                        "name": "Kevin Wellmann",
+                        "email": "kevin@wellmann.io"
+                    }
+                ],
+                "description": "Foundation for advanced WordPress plugin development",
+                "support": {
+                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/main",
+                    "issues": "https://github.com/Ce-Kw/wp-plugin-framework-core/issues"
+                }
+            }
+        },
+        "kwio/gutenberg-blocks-framework": {
+            "dev-master": {
+                "name": "kwio/gutenberg-blocks-framework",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/wellmann/gutenberg-blocks-framework.git",
+                    "reference": "f381c1cd86567485bcda11f2bb0da1dda18b9264"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/f381c1cd86567485bcda11f2bb0da1dda18b9264",
+                    "reference": "f381c1cd86567485bcda11f2bb0da1dda18b9264",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": ">=7.4"
+                },
+                "require-dev": {
+                    "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "wp-coding-standards/wpcs": "^2.2"
+                },
+                "time": "2020-11-18T18:24:01+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "KWIO\\GutenbergBlocksFramework\\": "src/"
+                    }
+                },
+                "authors": [
+                    {
+                        "name": "Kevin Wellmann",
+                        "email": "kevin@wellmann.io"
+                    }
+                ],
+                "description": "Foundation to develop custom blocks for Gutenberg.",
+                "support": {
+                    "source": "https://github.com/wellmann/gutenberg-blocks-framework/tree/master",
+                    "issues": "https://github.com/wellmann/gutenberg-blocks-framework/issues"
+                }
+            }
+        }
+    }
+}
