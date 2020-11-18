@@ -10,7 +10,7 @@ Add this Composer repository to your project's composer.json file, then you can 
 {
   "repositories": [{
     "type": "composer",
-    "url": "https://cekw.github.io/satis/"
+    "url": "https://ce-kw.github.io/satis/"
   }]
 }
 ```
@@ -19,4 +19,4 @@ Add this Composer repository to your project's composer.json file, then you can 
 To Add new packages edit the satis.json file and run `sh update.sh`.  
 If this is your first time cloning the repo run `composer install` first. 
 
-> Note: Composer repository is on gh-pages branch
+> Note: Composer repository is in docs folder
