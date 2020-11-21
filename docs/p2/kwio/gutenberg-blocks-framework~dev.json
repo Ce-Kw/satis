@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/wellmann/gutenberg-blocks-framework.git",
-                    "reference": "f381c1cd86567485bcda11f2bb0da1dda18b9264"
+                    "reference": "7abab94e656fdfa1bc41539ab50d91316132fb5e"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/f381c1cd86567485bcda11f2bb0da1dda18b9264",
-                    "reference": "f381c1cd86567485bcda11f2bb0da1dda18b9264",
+                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/7abab94e656fdfa1bc41539ab50d91316132fb5e",
+                    "reference": "7abab94e656fdfa1bc41539ab50d91316132fb5e",
                     "shasum": ""
                 },
                 "require": {
@@ -21,15 +21,20 @@
                 },
                 "require-dev": {
                     "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
-                    "squizlabs/php_codesniffer": "^3.5",
-                    "wp-coding-standards/wpcs": "^2.2"
+                    "phpunit/phpunit": "^9.4",
+                    "squizlabs/php_codesniffer": "^3.5"
                 },
-                "time": "2020-11-18T18:24:01+00:00",
+                "time": "2020-11-21T17:33:21+00:00",
                 "type": "library",
                 "autoload": {
                     "psr-4": {
                         "KWIO\\GutenbergBlocksFramework\\": "src/"
                     }
+                },
+                "scripts": {
+                    "test": [
+                        "phpunit"
+                    ]
                 },
                 "authors": [
                     {
