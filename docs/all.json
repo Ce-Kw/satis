@@ -8,16 +8,17 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/Ce-Kw/wp-plugin-framework-core.git",
-                    "reference": "a714cb17c2acb122aba25920c8c76aabc754bfcb"
+                    "reference": "3dc60453b4bab362d051fac3da6c830c24802f44"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-core/zipball/a714cb17c2acb122aba25920c8c76aabc754bfcb",
-                    "reference": "a714cb17c2acb122aba25920c8c76aabc754bfcb",
+                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-core/zipball/3dc60453b4bab362d051fac3da6c830c24802f44",
+                    "reference": "3dc60453b4bab362d051fac3da6c830c24802f44",
                     "shasum": ""
                 },
                 "require": {
-                    "php": ">=7.4"
+                    "php": ">=7.4",
+                    "rdlowrey/auryn": "^1.4"
                 },
                 "require-dev": {
                     "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
@@ -25,7 +26,12 @@
                     "phpunit/phpunit": "^9",
                     "squizlabs/php_codesniffer": "^3.5"
                 },
-                "time": "2020-12-06T19:46:19+00:00",
+                "suggest": {
+                    "cekw/wp-plugin-framework-assets": "Asset management package",
+                    "cekw/wp-plugin-framework-routing": "Routing package",
+                    "tareq1988/wp-eloquent": "ORM"
+                },
+                "time": "2021-01-13T20:25:27+00:00",
                 "type": "library",
                 "autoload": {
                     "psr-4": {
@@ -68,82 +74,6 @@
                 "description": "Foundation for advanced WordPress plugin development",
                 "support": {
                     "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/master",
-                    "issues": "https://github.com/Ce-Kw/wp-plugin-framework-core/issues"
-                }
-            },
-            "dev-experimental-kw": {
-                "name": "cekw/wp-plugin-framework-core",
-                "version": "dev-experimental-kw",
-                "version_normalized": "dev-experimental-kw",
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/Ce-Kw/wp-plugin-framework-core.git",
-                    "reference": "9edfc59fb54126b8d8c79cb5a20a790aeb3ab9b4"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-core/zipball/9edfc59fb54126b8d8c79cb5a20a790aeb3ab9b4",
-                    "reference": "9edfc59fb54126b8d8c79cb5a20a790aeb3ab9b4",
-                    "shasum": ""
-                },
-                "require": {
-                    "php": ">=7.4",
-                    "rdlowrey/auryn": "^1.4"
-                },
-                "require-dev": {
-                    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-                    "mockery/mockery": "^1.4",
-                    "phpunit/phpunit": "^9",
-                    "squizlabs/php_codesniffer": "^3.5"
-                },
-                "suggest": {
-                    "cekw/wp-plugin-framework-assets": "Asset management package",
-                    "cekw/wp-plugin-framework-routing": "Routing package",
-                    "tareq1988/wp-eloquent": "ORM"
-                },
-                "time": "2021-01-07T18:32:39+00:00",
-                "type": "library",
-                "autoload": {
-                    "psr-4": {
-                        "CEKW\\WpPluginFramework\\Core\\": "src/"
-                    }
-                },
-                "scripts": {
-                    "build:cc": [
-                        "vendor/bin/phpunit -c phpunit.xml --coverage-html coverage/"
-                    ],
-                    "build:cs-diff": [
-                        "vendor/bin/phpcs --report-diff=cs.diff src"
-                    ],
-                    "check:cs": [
-                        "vendor/bin/phpcs src -p --colors"
-                    ],
-                    "fix:cs": [
-                        "vendor/bin/phpcbf src -p --colors"
-                    ],
-                    "patch:cs-diff": [
-                        "patch -p0 -ui cs.diff"
-                    ],
-                    "start-server:cc": [
-                        "php -S 127.0.0.1:8000 -t coverage/"
-                    ],
-                    "test": [
-                        "vendor/bin/phpunit -c phpunit.xml --colors"
-                    ]
-                },
-                "authors": [
-                    {
-                        "name": "Christoph Ehlers",
-                        "email": "Christoph.Ehlers1988@gmx.de"
-                    },
-                    {
-                        "name": "Kevin Wellmann",
-                        "email": "kevin@wellmann.io"
-                    }
-                ],
-                "description": "Foundation for advanced WordPress plugin development",
-                "support": {
-                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/experimental-kw",
                     "issues": "https://github.com/Ce-Kw/wp-plugin-framework-core/issues"
                 }
             },
