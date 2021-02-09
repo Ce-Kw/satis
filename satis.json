@@ -9,6 +9,10 @@
         },
         {
             "type": "vcs",
+            "url": "git@github.com:Ce-Kw/wp-plugin-framework-routing.git"
+        },
+        {
+            "type": "vcs",
             "url": "git@github.com:wellmann/gutenberg-blocks-framework.git"
         }
     ],
