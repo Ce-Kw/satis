@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/Ce-Kw/wp-plugin-framework-core.git",
-                    "reference": "3b0c2f46e1da8d7455684ff07c61134056950d9b"
+                    "reference": "893b2ec8bad3639860b1fab057311a4b232686be"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-core/zipball/3b0c2f46e1da8d7455684ff07c61134056950d9b",
-                    "reference": "3b0c2f46e1da8d7455684ff07c61134056950d9b",
+                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-core/zipball/893b2ec8bad3639860b1fab057311a4b232686be",
+                    "reference": "893b2ec8bad3639860b1fab057311a4b232686be",
                     "shasum": ""
                 },
                 "require": {
@@ -31,7 +31,7 @@
                     "cekw/wp-plugin-framework-routing": "Routing package",
                     "tareq1988/wp-eloquent": "ORM"
                 },
-                "time": "2021-01-30T20:56:25+00:00",
+                "time": "2021-02-16T16:29:05+00:00",
                 "type": "library",
                 "autoload": {
                     "psr-4": {
@@ -230,12 +230,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/wellmann/gutenberg-blocks-framework.git",
-                    "reference": "4e37377d4e9d2256a0b42144f7d2e5fcee32044b"
+                    "reference": "22da967281ff90b2c90ec96aaea51605711ba775"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/4e37377d4e9d2256a0b42144f7d2e5fcee32044b",
-                    "reference": "4e37377d4e9d2256a0b42144f7d2e5fcee32044b",
+                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/22da967281ff90b2c90ec96aaea51605711ba775",
+                    "reference": "22da967281ff90b2c90ec96aaea51605711ba775",
                     "shasum": ""
                 },
                 "require": {
@@ -247,7 +247,7 @@
                     "phpunit/phpunit": "^9.4",
                     "squizlabs/php_codesniffer": "^3.5"
                 },
-                "time": "2021-02-14T20:56:43+00:00",
+                "time": "2021-02-16T17:00:10+00:00",
                 "type": "library",
                 "autoload": {
                     "psr-4": {
