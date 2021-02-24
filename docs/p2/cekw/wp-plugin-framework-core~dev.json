@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/Ce-Kw/wp-plugin-framework-core.git",
-                    "reference": "893b2ec8bad3639860b1fab057311a4b232686be"
+                    "reference": "c47599f965d45a34c157d71cf3209f715da76590"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-core/zipball/893b2ec8bad3639860b1fab057311a4b232686be",
-                    "reference": "893b2ec8bad3639860b1fab057311a4b232686be",
+                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-core/zipball/c47599f965d45a34c157d71cf3209f715da76590",
+                    "reference": "c47599f965d45a34c157d71cf3209f715da76590",
                     "shasum": ""
                 },
                 "require": {
@@ -31,7 +31,7 @@
                     "cekw/wp-plugin-framework-routing": "Routing package",
                     "tareq1988/wp-eloquent": "ORM"
                 },
-                "time": "2021-02-16T16:29:05+00:00",
+                "time": "2021-02-20T13:53:45+00:00",
                 "type": "library",
                 "autoload": {
                     "psr-4": {
