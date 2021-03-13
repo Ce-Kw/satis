@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/wellmann/gutenberg-blocks-framework.git",
-                    "reference": "d48f71beb14d0ca01949afa449234c0ccc5019c1"
+                    "reference": "d076e1e62594ef2a434594768f03d53f2ba4e7bb"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/d48f71beb14d0ca01949afa449234c0ccc5019c1",
-                    "reference": "d48f71beb14d0ca01949afa449234c0ccc5019c1",
+                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/d076e1e62594ef2a434594768f03d53f2ba4e7bb",
+                    "reference": "d076e1e62594ef2a434594768f03d53f2ba4e7bb",
                     "shasum": ""
                 },
                 "require": {
@@ -25,7 +25,7 @@
                     "phpunit/phpunit": "^9.4",
                     "squizlabs/php_codesniffer": "^3.5"
                 },
-                "time": "2021-02-20T08:17:13+00:00",
+                "time": "2021-03-13T08:06:03+00:00",
                 "type": "library",
                 "autoload": {
                     "psr-4": {
@@ -50,7 +50,7 @@
                 ],
                 "description": "Library to load custom Gutenberg blocks.",
                 "support": {
-                    "source": "https://github.com/wellmann/gutenberg-blocks-framework/tree/master",
+                    "source": "https://github.com/wellmann/gutenberg-blocks-framework/tree/1.0.0",
                     "issues": "https://github.com/wellmann/gutenberg-blocks-framework/issues"
                 }
             }
