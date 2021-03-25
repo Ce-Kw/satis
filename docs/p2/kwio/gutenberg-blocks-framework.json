@@ -53,6 +53,59 @@
                     "source": "https://github.com/wellmann/gutenberg-blocks-framework/tree/1.0.0",
                     "issues": "https://github.com/wellmann/gutenberg-blocks-framework/issues"
                 }
+            },
+            {
+                "name": "kwio/gutenberg-blocks-framework",
+                "version": "1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/wellmann/gutenberg-blocks-framework.git",
+                    "reference": "fc35a4d63dc98099ba8b62ea08660be4df0bf4a3"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/fc35a4d63dc98099ba8b62ea08660be4df0bf4a3",
+                    "reference": "fc35a4d63dc98099ba8b62ea08660be4df0bf4a3",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": ">=7.4"
+                },
+                "require-dev": {
+                    "brain/monkey": "^2.6",
+                    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                    "phpunit/phpunit": "^9.4",
+                    "squizlabs/php_codesniffer": "^3.5"
+                },
+                "time": "2021-03-25T08:46:01+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "KWIO\\GutenbergBlocksFramework\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "KWIO\\GutenbergBlocksFramework\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "phpunit"
+                    ]
+                },
+                "authors": [
+                    {
+                        "name": "Kevin Wellmann",
+                        "email": "kevin@wellmann.io"
+                    }
+                ],
+                "description": "Library to load custom Gutenberg blocks.",
+                "support": {
+                    "source": "https://github.com/wellmann/gutenberg-blocks-framework/tree/1.0.1",
+                    "issues": "https://github.com/wellmann/gutenberg-blocks-framework/issues"
+                }
             }
         ]
     }
