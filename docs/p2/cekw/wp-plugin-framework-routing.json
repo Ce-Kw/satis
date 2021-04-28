@@ -1,5 +1,77 @@
 {
     "packages": {
-        "cekw/wp-plugin-framework-routing": []
+        "cekw/wp-plugin-framework-routing": [
+            {
+                "name": "cekw/wp-plugin-framework-routing",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/Ce-Kw/wp-plugin-framework-routing.git",
+                    "reference": "215e825d0e89bf68cbd6875c4db3f19fedf418fa"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-routing/zipball/215e825d0e89bf68cbd6875c4db3f19fedf418fa",
+                    "reference": "215e825d0e89bf68cbd6875c4db3f19fedf418fa",
+                    "shasum": ""
+                },
+                "require": {
+                    "altorouter/altorouter": "^2.0",
+                    "php": ">=7.4"
+                },
+                "require-dev": {
+                    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                    "mockery/mockery": "^1.4",
+                    "phpunit/phpunit": "^9",
+                    "squizlabs/php_codesniffer": "^3.5"
+                },
+                "time": "2021-02-08T19:20:53+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "CEKW\\WpPluginFramework\\Routing\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "build:cc": [
+                        "vendor/bin/phpunit -c phpunit.xml --coverage-html coverage/"
+                    ],
+                    "build:cs-diff": [
+                        "vendor/bin/phpcs --report-diff=cs.diff src"
+                    ],
+                    "check:cs": [
+                        "vendor/bin/phpcs src -p --colors"
+                    ],
+                    "fix:cs": [
+                        "vendor/bin/phpcbf src -p --colors"
+                    ],
+                    "patch:cs-diff": [
+                        "patch -p0 -ui cs.diff"
+                    ],
+                    "start-server:cc": [
+                        "php -S 127.0.0.1:8000 -t coverage/"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit -c phpunit.xml --colors"
+                    ]
+                },
+                "authors": [
+                    {
+                        "name": "Christoph Ehlers",
+                        "email": "Christoph.Ehlers1988@gmx.de"
+                    },
+                    {
+                        "name": "Kevin Wellmann",
+                        "email": "kevin@wellmann.io"
+                    }
+                ],
+                "description": "Routing package for cekw/wp-plugin-framework-core",
+                "support": {
+                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-routing/tree/1.0.0",
+                    "issues": "https://github.com/Ce-Kw/wp-plugin-framework-routing/issues"
+                }
+            }
+        ]
     }
 }
