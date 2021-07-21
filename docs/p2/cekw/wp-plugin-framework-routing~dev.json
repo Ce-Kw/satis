@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/Ce-Kw/wp-plugin-framework-routing.git",
-                    "reference": "215e825d0e89bf68cbd6875c4db3f19fedf418fa"
+                    "reference": "4557423735db1585beb0690f207dfc4ace4055a5"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-routing/zipball/215e825d0e89bf68cbd6875c4db3f19fedf418fa",
-                    "reference": "215e825d0e89bf68cbd6875c4db3f19fedf418fa",
+                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-routing/zipball/4557423735db1585beb0690f207dfc4ace4055a5",
+                    "reference": "4557423735db1585beb0690f207dfc4ace4055a5",
                     "shasum": ""
                 },
                 "require": {
@@ -26,7 +26,7 @@
                     "phpunit/phpunit": "^9",
                     "squizlabs/php_codesniffer": "^3.5"
                 },
-                "time": "2021-02-08T19:20:53+00:00",
+                "time": "2021-05-18T19:56:11+00:00",
                 "type": "library",
                 "autoload": {
                     "psr-4": {
@@ -68,7 +68,7 @@
                 ],
                 "description": "Routing package for cekw/wp-plugin-framework-core",
                 "support": {
-                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-routing/tree/1.0.0",
+                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-routing/tree/master",
                     "issues": "https://github.com/Ce-Kw/wp-plugin-framework-routing/issues"
                 }
             }
