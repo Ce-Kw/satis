@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/wellmann/gutenberg-blocks-framework.git",
-                    "reference": "9402d3d18f23d72969370ff4bd06e272b87180f9"
+                    "reference": "04718c907fa35a332b7b82ab0286d3b35a430648"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/9402d3d18f23d72969370ff4bd06e272b87180f9",
-                    "reference": "9402d3d18f23d72969370ff4bd06e272b87180f9",
+                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/04718c907fa35a332b7b82ab0286d3b35a430648",
+                    "reference": "04718c907fa35a332b7b82ab0286d3b35a430648",
                     "shasum": ""
                 },
                 "require": {
@@ -25,7 +25,7 @@
                     "phpunit/phpunit": "^9.4",
                     "squizlabs/php_codesniffer": "^3.5"
                 },
-                "time": "2021-07-21T16:40:47+00:00",
+                "time": "2021-07-22T19:15:19+00:00",
                 "type": "library",
                 "autoload": {
                     "psr-4": {
