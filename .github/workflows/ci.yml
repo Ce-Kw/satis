@@ -1,0 +1,19 @@
+name: Satis
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+jobs:
+  build-satis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dev-this/satis-build@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          php $(pwd)/vendor/bin/satis build satis.json docs
+          git add .
+          git commit -m "update dependencies"
+          git push origin main -f
