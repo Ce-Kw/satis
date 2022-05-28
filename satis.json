@@ -16,5 +16,6 @@
             "url": "git@github.com:wellmann/gutenberg-blocks-framework.git"
         }
     ],
-    "require-all": true
+    "require-all": true,
+    "output-dir": "docs"
 }
