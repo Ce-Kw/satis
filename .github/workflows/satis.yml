@@ -9,15 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: dev-this/satis-build@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: set git user
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      - uses: dev-this/satis-build@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: commit generated satis files
         run: |
-          php $(pwd)/vendor/bin/satis build satis.json docs
           git add .
           git commit -m "update dependencies"
-          git push origin main -f
+          git push
