@@ -2,6 +2,8 @@
 
 https://ce-kw.github.io/satis/
 
+> Note: Satis website is served from the docs folder.
+
 ## Setting up this repository in your projects
 
 Add this Composer repository to your project's composer.json file, then you can require these private packages just like you would with one from Packagist.
@@ -18,10 +20,32 @@ Add this Composer repository to your project's composer.json file, then you can 
 ```
 
 ## Updating packages
-To update existing packages run `sh update.sh`.
+Packages are automatically updated by GitHub Action workflows triggered by other repos or by pushing to this main branch.
 
 ## Adding new packages
-To Add new packages edit the satis.json file and run `sh update.sh`.  
-If this is your first time cloning the repo run `composer install` first. 
+To add new packages edit the `satis.json` file, commit and push.
 
-> Note: Composer repository is in docs folder
+The repo of the very package should contain the following workflow file:  
+`satis.yml`
+```yml
+name: Satis
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+jobs:
+  update-satis:
+    runs-on: ubuntu-latest
+    steps:
+      - name: trigger satis update
+        uses: convictional/trigger-workflow-and-wait@v1.6.1
+        with:
+          owner: Ce-Kw
+          repo: satis
+          github_token: ${{ secrets.SATIS_PERSONAL_ACCESS_TOKEN }}
+          workflow_file_name: satis.yml
+          ref: main
+          wait_workflow: false
+```
+You need to create a GitHub personal access token with `public_repo` checked and store it under the repos secrets with the name `SATIS_PERSONAL_ACCESS_TOKEN`.
