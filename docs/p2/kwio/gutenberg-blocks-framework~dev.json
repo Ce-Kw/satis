@@ -4,16 +4,16 @@
             {
                 "name": "kwio/gutenberg-blocks-framework",
                 "version": "dev-master",
-                "version_normalized": "9999999-dev",
+                "version_normalized": "dev-master",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/wellmann/gutenberg-blocks-framework.git",
-                    "reference": "04718c907fa35a332b7b82ab0286d3b35a430648"
+                    "reference": "941bea27a1e7ca5907d30f7a749d42a1f5f665c2"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/04718c907fa35a332b7b82ab0286d3b35a430648",
-                    "reference": "04718c907fa35a332b7b82ab0286d3b35a430648",
+                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/941bea27a1e7ca5907d30f7a749d42a1f5f665c2",
+                    "reference": "941bea27a1e7ca5907d30f7a749d42a1f5f665c2",
                     "shasum": ""
                 },
                 "require": {
@@ -22,10 +22,15 @@
                 "require-dev": {
                     "brain/monkey": "^2.6",
                     "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-                    "phpunit/phpunit": "^9.4",
-                    "squizlabs/php_codesniffer": "^3.5"
+                    "phpstan/extension-installer": "^1.1",
+                    "phpstan/phpstan": "^0.12.94",
+                    "phpunit/phpunit": "^9.5",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "szepeviktor/phpstan-wordpress": "^0.7.7",
+                    "timber/timber": "^1.18"
                 },
-                "time": "2021-07-22T19:15:19+00:00",
+                "time": "2022-05-28T19:07:50+00:00",
+                "default-branch": true,
                 "type": "library",
                 "autoload": {
                     "psr-4": {
@@ -38,6 +43,18 @@
                     }
                 },
                 "scripts": {
+                    "analyse": [
+                        "phpstan analyse src --memory-limit 500M"
+                    ],
+                    "build:cc": [
+                        "php -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-html coverage/"
+                    ],
+                    "cs:check": [
+                        "phpcs src"
+                    ],
+                    "cs:fix": [
+                        "phpcbf src"
+                    ],
                     "test": [
                         "phpunit"
                     ]
