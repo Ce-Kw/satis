@@ -1,3 +1,6 @@
+[![Satis](https://github.com/Ce-Kw/satis/actions/workflows/satis.yml/badge.svg)](https://github.com/Ce-Kw/satis/actions/workflows/satis.yml)
+[![pages-build-deployment](https://github.com/Ce-Kw/satis/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Ce-Kw/satis/actions/workflows/pages/pages-build-deployment)
+
 # Ce-Kw Composer Repository
 
 https://ce-kw.github.io/satis/
