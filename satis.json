@@ -1,5 +1,6 @@
 {
-    "name": "Ce-Kw Composer Repository",
+    "name": "Ce-Kw/satis",
+    "description": "Ce-Kw Composer Repository",
     "homepage": "https://ce-kw.github.io/satis/",
     "include-filename": "all.json",
     "repositories": [
