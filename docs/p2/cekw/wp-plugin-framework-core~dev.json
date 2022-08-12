@@ -74,7 +74,7 @@
                 ],
                 "description": "Foundation for advanced WordPress plugin development",
                 "support": {
-                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/master",
+                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/1.0.2",
                     "issues": "https://github.com/Ce-Kw/wp-plugin-framework-core/issues"
                 }
             }
