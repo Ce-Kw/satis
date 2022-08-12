@@ -160,12 +160,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/Ce-Kw/wp-plugin-framework-core.git",
-                    "reference": "c4d4ad6160fb362ba0fb4822680be3386027de98"
+                    "reference": "7b1d2685d8610e61f386b0caa34d63ed9e196fb8"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-core/zipball/c4d4ad6160fb362ba0fb4822680be3386027de98",
-                    "reference": "c4d4ad6160fb362ba0fb4822680be3386027de98",
+                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-core/zipball/7b1d2685d8610e61f386b0caa34d63ed9e196fb8",
+                    "reference": "7b1d2685d8610e61f386b0caa34d63ed9e196fb8",
                     "shasum": ""
                 },
                 "require": {
@@ -183,7 +183,7 @@
                     "cekw/wp-plugin-framework-routing": "Routing package",
                     "tareq1988/wp-eloquent": "ORM"
                 },
-                "time": "2021-05-04T19:02:49+00:00",
+                "time": "2022-08-12T18:56:52+00:00",
                 "default-branch": true,
                 "type": "library",
                 "autoload": {
@@ -226,7 +226,7 @@
                 ],
                 "description": "Foundation for advanced WordPress plugin development",
                 "support": {
-                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/1.0.1",
+                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/master",
                     "issues": "https://github.com/Ce-Kw/wp-plugin-framework-core/issues"
                 }
             }
