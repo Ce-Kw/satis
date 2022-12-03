@@ -2,11 +2,12 @@
     "packages": [],
     "includes": {
         "all.json": {
-            "sha1": "5c726d56938d57a8300199cc8ded6c0af9215548"
+            "sha1": "5d4452dd9c4806678731b70a1b80dfce37b32fd3"
         }
     },
     "metadata-url": "/satis/p2/%package%.json",
     "available-packages": [
+        "cekw/wp-plugin",
         "cekw/wp-plugin-framework-core",
         "cekw/wp-plugin-framework-routing",
         "kwio/gutenberg-blocks-framework"

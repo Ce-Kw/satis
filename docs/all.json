@@ -1,5 +1,83 @@
 {
     "packages": {
+        "cekw/wp-plugin": {
+            "dev-master": {
+                "name": "cekw/wp-plugin",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/Ce-Kw/wp-plugin.git",
+                    "reference": "cc7aa379f4a8e53a2efa06d1cd5ae9a01a23f54e"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin/zipball/cc7aa379f4a8e53a2efa06d1cd5ae9a01a23f54e",
+                    "reference": "cc7aa379f4a8e53a2efa06d1cd5ae9a01a23f54e",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": ">=8.1",
+                    "rdlowrey/auryn": "^1.4",
+                    "symfony/http-foundation": "^6.1",
+                    "symfony/routing": "^6.1"
+                },
+                "require-dev": {
+                    "brain/monkey": "^2.6",
+                    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+                    "php-stubs/wp-cli-stubs": "^2.7",
+                    "phpstan/extension-installer": "^1.2",
+                    "phpstan/phpstan": "^1.9",
+                    "phpunit/phpunit": "^9.5",
+                    "squizlabs/php_codesniffer": "^3.7",
+                    "szepeviktor/phpstan-wordpress": "^1.1"
+                },
+                "time": "2022-12-03T22:10:41+00:00",
+                "default-branch": true,
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "CEKW\\WpPlugin\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "CEKW\\WpPlugin\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "analyse": [
+                        "phpstan analyse src --level 0 --memory-limit 500M"
+                    ],
+                    "build:cc": [
+                        "php -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-html coverage/"
+                    ],
+                    "cs:check": [
+                        "phpcs src"
+                    ],
+                    "cs:fix": [
+                        "phpcbf src"
+                    ],
+                    "test": [
+                        "phpunit"
+                    ]
+                },
+                "authors": [
+                    {
+                        "name": "Christoph Ehlers",
+                        "email": "Christoph.Ehlers1988@gmx.de"
+                    },
+                    {
+                        "name": "Kevin Wellmann",
+                        "email": "kevin@wellmann.io"
+                    }
+                ],
+                "support": {
+                    "source": "https://github.com/Ce-Kw/wp-plugin/tree/master",
+                    "issues": "https://github.com/Ce-Kw/wp-plugin/issues"
+                }
+            }
+        },
         "cekw/wp-plugin-framework-core": {
             "1.0.0": {
                 "name": "cekw/wp-plugin-framework-core",
@@ -73,9 +151,9 @@
                 ],
                 "description": "Foundation for advanced WordPress plugin development",
                 "support": {
-                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/1.0.0",
-                    "issues": "https://github.com/Ce-Kw/wp-plugin-framework-core/issues"
-                }
+                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/1.0.0"
+                },
+                "abandoned": true
             },
             "1.0.1": {
                 "name": "cekw/wp-plugin-framework-core",
@@ -149,9 +227,9 @@
                 ],
                 "description": "Foundation for advanced WordPress plugin development",
                 "support": {
-                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/1.0.1",
-                    "issues": "https://github.com/Ce-Kw/wp-plugin-framework-core/issues"
-                }
+                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/1.0.1"
+                },
+                "abandoned": true
             },
             "1.0.2": {
                 "name": "cekw/wp-plugin-framework-core",
@@ -225,9 +303,9 @@
                 ],
                 "description": "Foundation for advanced WordPress plugin development",
                 "support": {
-                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/1.0.2",
-                    "issues": "https://github.com/Ce-Kw/wp-plugin-framework-core/issues"
-                }
+                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/1.0.2"
+                },
+                "abandoned": true
             },
             "dev-master": {
                 "name": "cekw/wp-plugin-framework-core",
@@ -302,9 +380,9 @@
                 ],
                 "description": "Foundation for advanced WordPress plugin development",
                 "support": {
-                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/1.0.2",
-                    "issues": "https://github.com/Ce-Kw/wp-plugin-framework-core/issues"
-                }
+                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/1.0.2"
+                },
+                "abandoned": true
             }
         },
         "cekw/wp-plugin-framework-routing": {
@@ -375,9 +453,9 @@
                 ],
                 "description": "Routing package for cekw/wp-plugin-framework-core",
                 "support": {
-                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-routing/tree/1.0.0",
-                    "issues": "https://github.com/Ce-Kw/wp-plugin-framework-routing/issues"
-                }
+                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-routing/tree/1.0.0"
+                },
+                "abandoned": true
             },
             "dev-master": {
                 "name": "cekw/wp-plugin-framework-routing",
@@ -447,9 +525,9 @@
                 ],
                 "description": "Routing package for cekw/wp-plugin-framework-core",
                 "support": {
-                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-routing/tree/master",
-                    "issues": "https://github.com/Ce-Kw/wp-plugin-framework-routing/issues"
-                }
+                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-routing/tree/master"
+                },
+                "abandoned": true
             }
         },
         "kwio/gutenberg-blocks-framework": {

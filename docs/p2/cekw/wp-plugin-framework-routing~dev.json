@@ -69,9 +69,9 @@
                 ],
                 "description": "Routing package for cekw/wp-plugin-framework-core",
                 "support": {
-                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-routing/tree/master",
-                    "issues": "https://github.com/Ce-Kw/wp-plugin-framework-routing/issues"
-                }
+                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-routing/tree/master"
+                },
+                "abandoned": true
             }
         ]
     }
