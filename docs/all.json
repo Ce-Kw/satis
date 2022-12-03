@@ -153,19 +153,19 @@
                     "issues": "https://github.com/Ce-Kw/wp-plugin-framework-core/issues"
                 }
             },
-            "dev-master": {
+            "1.0.2": {
                 "name": "cekw/wp-plugin-framework-core",
-                "version": "dev-master",
-                "version_normalized": "dev-master",
+                "version": "1.0.2",
+                "version_normalized": "1.0.2.0",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/Ce-Kw/wp-plugin-framework-core.git",
-                    "reference": "c4d4ad6160fb362ba0fb4822680be3386027de98"
+                    "reference": "7b1d2685d8610e61f386b0caa34d63ed9e196fb8"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-core/zipball/c4d4ad6160fb362ba0fb4822680be3386027de98",
-                    "reference": "c4d4ad6160fb362ba0fb4822680be3386027de98",
+                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-core/zipball/7b1d2685d8610e61f386b0caa34d63ed9e196fb8",
+                    "reference": "7b1d2685d8610e61f386b0caa34d63ed9e196fb8",
                     "shasum": ""
                 },
                 "require": {
@@ -183,7 +183,83 @@
                     "cekw/wp-plugin-framework-routing": "Routing package",
                     "tareq1988/wp-eloquent": "ORM"
                 },
-                "time": "2021-05-04T19:02:49+00:00",
+                "time": "2022-08-12T18:56:52+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "CEKW\\WpPluginFramework\\Core\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "build:cc": [
+                        "vendor/bin/phpunit -c phpunit.xml --coverage-html coverage/"
+                    ],
+                    "build:cs-diff": [
+                        "vendor/bin/phpcs --report-diff=cs.diff src"
+                    ],
+                    "check:cs": [
+                        "vendor/bin/phpcs src -p --colors"
+                    ],
+                    "fix:cs": [
+                        "vendor/bin/phpcbf src -p --colors"
+                    ],
+                    "patch:cs-diff": [
+                        "patch -p0 -ui cs.diff"
+                    ],
+                    "start-server:cc": [
+                        "php -S 127.0.0.1:8000 -t coverage/"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit -c phpunit.xml --colors"
+                    ]
+                },
+                "authors": [
+                    {
+                        "name": "Christoph Ehlers",
+                        "email": "Christoph.Ehlers1988@gmx.de"
+                    },
+                    {
+                        "name": "Kevin Wellmann",
+                        "email": "kevin@wellmann.io"
+                    }
+                ],
+                "description": "Foundation for advanced WordPress plugin development",
+                "support": {
+                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/1.0.2",
+                    "issues": "https://github.com/Ce-Kw/wp-plugin-framework-core/issues"
+                }
+            },
+            "dev-master": {
+                "name": "cekw/wp-plugin-framework-core",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/Ce-Kw/wp-plugin-framework-core.git",
+                    "reference": "7b1d2685d8610e61f386b0caa34d63ed9e196fb8"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin-framework-core/zipball/7b1d2685d8610e61f386b0caa34d63ed9e196fb8",
+                    "reference": "7b1d2685d8610e61f386b0caa34d63ed9e196fb8",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": ">=7.4",
+                    "rdlowrey/auryn": "^1.4"
+                },
+                "require-dev": {
+                    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                    "mockery/mockery": "^1.4",
+                    "phpunit/phpunit": "^9",
+                    "squizlabs/php_codesniffer": "^3.5"
+                },
+                "suggest": {
+                    "cekw/wp-plugin-framework-assets": "Asset management package",
+                    "cekw/wp-plugin-framework-routing": "Routing package",
+                    "tareq1988/wp-eloquent": "ORM"
+                },
+                "time": "2022-08-12T18:56:52+00:00",
                 "default-branch": true,
                 "type": "library",
                 "autoload": {
@@ -226,7 +302,7 @@
                 ],
                 "description": "Foundation for advanced WordPress plugin development",
                 "support": {
-                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/1.0.1",
+                    "source": "https://github.com/Ce-Kw/wp-plugin-framework-core/tree/1.0.2",
                     "issues": "https://github.com/Ce-Kw/wp-plugin-framework-core/issues"
                 }
             }
@@ -483,19 +559,19 @@
                     "issues": "https://github.com/wellmann/gutenberg-blocks-framework/issues"
                 }
             },
-            "dev-master": {
+            "1.0.2": {
                 "name": "kwio/gutenberg-blocks-framework",
-                "version": "dev-master",
-                "version_normalized": "dev-master",
+                "version": "1.0.2",
+                "version_normalized": "1.0.2.0",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/wellmann/gutenberg-blocks-framework.git",
-                    "reference": "63fd8a1f51c387db45638e244ba22c8b1db7f253"
+                    "reference": "3e981ced2451431edc105c80cbfa51c8decefba7"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/63fd8a1f51c387db45638e244ba22c8b1db7f253",
-                    "reference": "63fd8a1f51c387db45638e244ba22c8b1db7f253",
+                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/3e981ced2451431edc105c80cbfa51c8decefba7",
+                    "reference": "3e981ced2451431edc105c80cbfa51c8decefba7",
                     "shasum": ""
                 },
                 "require": {
@@ -511,7 +587,76 @@
                     "szepeviktor/phpstan-wordpress": "^0.7.7",
                     "timber/timber": "^1.18"
                 },
-                "time": "2022-05-28T22:59:09+00:00",
+                "time": "2022-07-22T22:18:52+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "KWIO\\GutenbergBlocksFramework\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "KWIO\\GutenbergBlocksFramework\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "analyse": [
+                        "phpstan analyse src --memory-limit 500M"
+                    ],
+                    "build:cc": [
+                        "php -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-html coverage/"
+                    ],
+                    "cs:check": [
+                        "phpcs src"
+                    ],
+                    "cs:fix": [
+                        "phpcbf src"
+                    ],
+                    "test": [
+                        "phpunit"
+                    ]
+                },
+                "authors": [
+                    {
+                        "name": "Kevin Wellmann",
+                        "email": "kevin@wellmann.io"
+                    }
+                ],
+                "description": "Library to load custom Gutenberg blocks.",
+                "support": {
+                    "source": "https://github.com/wellmann/gutenberg-blocks-framework/tree/1.0.2",
+                    "issues": "https://github.com/wellmann/gutenberg-blocks-framework/issues"
+                }
+            },
+            "dev-master": {
+                "name": "kwio/gutenberg-blocks-framework",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/wellmann/gutenberg-blocks-framework.git",
+                    "reference": "39a9e4df0de5f4166c63541a56ade2fbb7c1e7db"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/39a9e4df0de5f4166c63541a56ade2fbb7c1e7db",
+                    "reference": "39a9e4df0de5f4166c63541a56ade2fbb7c1e7db",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": ">=7.4"
+                },
+                "require-dev": {
+                    "brain/monkey": "^2.6",
+                    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                    "phpstan/extension-installer": "^1.1",
+                    "phpstan/phpstan": "^0.12.94",
+                    "phpunit/phpunit": "^9.5",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "szepeviktor/phpstan-wordpress": "^0.7.7",
+                    "timber/timber": "^1.18"
+                },
+                "time": "2022-07-26T21:21:23+00:00",
                 "default-branch": true,
                 "type": "library",
                 "autoload": {
