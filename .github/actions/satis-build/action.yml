@@ -1,0 +1,42 @@
+name: 'Satis build - composer repository'
+description: 'Build a static composer repository using satis'
+
+inputs:
+  token:
+    description: 'Token to use (ie. GITHUB_TOKEN, App token or a PAT)'
+    required: true
+  satis_config:
+    description: 'Path to satis configuration file (default: ./satis.json)'
+    required: false
+    default: 'satis.json'
+
+runs:
+  using: "composite"
+  steps:
+    - env:
+        COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ inputs.token }}"}}'
+        COMPOSER_HOME: /tmp/.satis-build
+      run: |
+        mkdir /tmp/.satis-build
+        echo "{}" > /tmp/.satis-build/composer.json
+
+        composer global config --no-interaction allow-plugins.composer/satis true
+
+        composer g require composer/satis:dev-main --prefer-dist \
+          --no-cache --no-progress --no-interaction -o \
+          --ignore-platform-reqs
+
+        php $COMPOSER_HOME/vendor/bin/satis build ${{ inputs.satis_config }} -n
+
+        if cat ${{ inputs.satis_config }} | jq .archive -e; then
+          php $COMPOSER_HOME/vendor/bin/satis purge ${{ inputs.satis_config }} -n
+        fi
+
+      shell: bash
+    - run: |
+        rm -rf $COMPOSER_HOME
+      shell: bash
+
+branding:
+  icon: 'download-cloud'
+  color: 'gray-dark'

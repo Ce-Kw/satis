@@ -9,9 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: composer config
-        run: composer global config --no-interaction allow-plugins.composer/satis true
-      - uses: dev-this/satis-build@v1
+      - uses: /.github/actions/satis-build
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: set git user
