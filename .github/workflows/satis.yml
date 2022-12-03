@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: composer config
-        run: composer config --no-interaction allow-plugins.composer/satis true
+        run: composer global config --no-interaction allow-plugins.composer/satis true
       - uses: dev-this/satis-build@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
