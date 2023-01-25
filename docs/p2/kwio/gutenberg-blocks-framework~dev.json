@@ -67,7 +67,7 @@
                 ],
                 "description": "Library to load custom Gutenberg blocks.",
                 "support": {
-                    "source": "https://github.com/wellmann/gutenberg-blocks-framework/tree/master",
+                    "source": "https://github.com/wellmann/gutenberg-blocks-framework/tree/1.0.3",
                     "issues": "https://github.com/wellmann/gutenberg-blocks-framework/issues"
                 }
             }
