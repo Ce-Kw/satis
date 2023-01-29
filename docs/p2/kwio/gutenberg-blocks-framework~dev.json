@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/wellmann/gutenberg-blocks-framework.git",
-                    "reference": "39a9e4df0de5f4166c63541a56ade2fbb7c1e7db"
+                    "reference": "e17ae31a3faaaaf60aac598bc522232e0bb1f6c0"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/39a9e4df0de5f4166c63541a56ade2fbb7c1e7db",
-                    "reference": "39a9e4df0de5f4166c63541a56ade2fbb7c1e7db",
+                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/e17ae31a3faaaaf60aac598bc522232e0bb1f6c0",
+                    "reference": "e17ae31a3faaaaf60aac598bc522232e0bb1f6c0",
                     "shasum": ""
                 },
                 "require": {
@@ -29,17 +29,17 @@
                     "szepeviktor/phpstan-wordpress": "^0.7.7",
                     "timber/timber": "^1.18"
                 },
-                "time": "2022-07-26T21:21:23+00:00",
+                "time": "2023-01-29T20:18:12+00:00",
                 "default-branch": true,
                 "type": "library",
                 "autoload": {
                     "psr-4": {
-                        "KWIO\\GutenbergBlocksFramework\\": "src/"
+                        "KWIO\\GutenbergBlocks\\": "src/"
                     }
                 },
                 "autoload-dev": {
                     "psr-4": {
-                        "KWIO\\GutenbergBlocksFramework\\Tests\\": "tests/"
+                        "KWIO\\GutenbergBlocks\\Tests\\": "tests/"
                     }
                 },
                 "scripts": {
@@ -67,7 +67,7 @@
                 ],
                 "description": "Library to load custom Gutenberg blocks.",
                 "support": {
-                    "source": "https://github.com/wellmann/gutenberg-blocks-framework/tree/1.0.3",
+                    "source": "https://github.com/wellmann/gutenberg-blocks-framework/tree/master",
                     "issues": "https://github.com/wellmann/gutenberg-blocks-framework/issues"
                 }
             }
