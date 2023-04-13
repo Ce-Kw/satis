@@ -775,19 +775,19 @@
                     "issues": "https://github.com/wellmann/gutenberg-blocks-framework/issues"
                 }
             },
-            "dev-master": {
+            "dev-dependabot/bundler/docs/commonmarker-0.23.9": {
                 "name": "kwio/gutenberg-blocks-framework",
-                "version": "dev-master",
-                "version_normalized": "dev-master",
+                "version": "dev-dependabot/bundler/docs/commonmarker-0.23.9",
+                "version_normalized": "dev-dependabot/bundler/docs/commonmarker-0.23.9",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/wellmann/gutenberg-blocks-framework.git",
-                    "reference": "220e91d712fac28872120314b6c64d5f43b80178"
+                    "reference": "f058d36237ad2fa22e50934a0540bb2bba4d1599"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/220e91d712fac28872120314b6c64d5f43b80178",
-                    "reference": "220e91d712fac28872120314b6c64d5f43b80178",
+                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/f058d36237ad2fa22e50934a0540bb2bba4d1599",
+                    "reference": "f058d36237ad2fa22e50934a0540bb2bba4d1599",
                     "shasum": ""
                 },
                 "require": {
@@ -803,7 +803,76 @@
                     "szepeviktor/phpstan-wordpress": "^0.7.7",
                     "timber/timber": "^1.18"
                 },
-                "time": "2023-03-26T18:29:37+00:00",
+                "time": "2023-04-13T19:02:44+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "KWIO\\GutenbergBlocks\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "KWIO\\GutenbergBlocks\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "analyse": [
+                        "phpstan analyse src --memory-limit 500M"
+                    ],
+                    "build:cc": [
+                        "php -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-html coverage/"
+                    ],
+                    "cs:check": [
+                        "phpcs src"
+                    ],
+                    "cs:fix": [
+                        "phpcbf src"
+                    ],
+                    "test": [
+                        "phpunit"
+                    ]
+                },
+                "authors": [
+                    {
+                        "name": "Kevin Wellmann",
+                        "email": "kevin@wellmann.io"
+                    }
+                ],
+                "description": "Library to load custom Gutenberg blocks.",
+                "support": {
+                    "source": "https://github.com/wellmann/gutenberg-blocks-framework/tree/dependabot/bundler/docs/commonmarker-0.23.9",
+                    "issues": "https://github.com/wellmann/gutenberg-blocks-framework/issues"
+                }
+            },
+            "dev-master": {
+                "name": "kwio/gutenberg-blocks-framework",
+                "version": "dev-master",
+                "version_normalized": "dev-master",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/wellmann/gutenberg-blocks-framework.git",
+                    "reference": "f4c710189076337da4db137495d5ac4595ee6582"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/f4c710189076337da4db137495d5ac4595ee6582",
+                    "reference": "f4c710189076337da4db137495d5ac4595ee6582",
+                    "shasum": ""
+                },
+                "require": {
+                    "php": ">=7.4"
+                },
+                "require-dev": {
+                    "brain/monkey": "^2.6",
+                    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                    "phpstan/extension-installer": "^1.1",
+                    "phpstan/phpstan": "^0.12.94",
+                    "phpunit/phpunit": "^9.5",
+                    "squizlabs/php_codesniffer": "^3.5",
+                    "szepeviktor/phpstan-wordpress": "^0.7.7",
+                    "timber/timber": "^1.18"
+                },
+                "time": "2023-04-13T19:02:00+00:00",
                 "default-branch": true,
                 "type": "library",
                 "autoload": {
