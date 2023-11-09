@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/Ce-Kw/wp-plugin.git",
-                    "reference": "b63d842641910f7c0c82d6b8c5938be069618c2e"
+                    "reference": "c94b79a7c3f308d861f965d223d49ba696d9ea2e"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin/zipball/b63d842641910f7c0c82d6b8c5938be069618c2e",
-                    "reference": "b63d842641910f7c0c82d6b8c5938be069618c2e",
+                    "url": "https://api.github.com/repos/Ce-Kw/wp-plugin/zipball/c94b79a7c3f308d861f965d223d49ba696d9ea2e",
+                    "reference": "c94b79a7c3f308d861f965d223d49ba696d9ea2e",
                     "shasum": ""
                 },
                 "require": {
@@ -32,7 +32,7 @@
                     "squizlabs/php_codesniffer": "^3.7",
                     "szepeviktor/phpstan-wordpress": "^1.1"
                 },
-                "time": "2023-01-06T12:14:59+00:00",
+                "time": "2023-11-09T21:43:03+00:00",
                 "default-branch": true,
                 "type": "library",
                 "autoload": {
