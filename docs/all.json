@@ -851,12 +851,12 @@
                 "source": {
                     "type": "git",
                     "url": "https://github.com/wellmann/gutenberg-blocks-framework.git",
-                    "reference": "6340ca540f764fa0b1bd8a365c218625d97e4a8f"
+                    "reference": "0fe3520687c114f8fb96fc91d65322913a29dd90"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/6340ca540f764fa0b1bd8a365c218625d97e4a8f",
-                    "reference": "6340ca540f764fa0b1bd8a365c218625d97e4a8f",
+                    "url": "https://api.github.com/repos/wellmann/gutenberg-blocks-framework/zipball/0fe3520687c114f8fb96fc91d65322913a29dd90",
+                    "reference": "0fe3520687c114f8fb96fc91d65322913a29dd90",
                     "shasum": ""
                 },
                 "require": {
@@ -872,7 +872,7 @@
                     "szepeviktor/phpstan-wordpress": "^2.0",
                     "timber/timber": "^2.5"
                 },
-                "time": "2026-10-23T22:32:51+00:00",
+                "time": "2026-10-26T16:20:38+00:00",
                 "default-branch": true,
                 "type": "library",
                 "autoload": {
